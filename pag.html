@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Fit</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet" rel="stylesheet">
+
+<style>
+        /* Essa parte foi feita por: Camila. */
+        /* Style de todos os elementos do site e responsividade */
+.star-img {
+max-width: 20px; 
+margin-right: 5px; 
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: #FFD4A0;
+}
+
+.img-logo {
+    max-width: 200px;
+}
+.navbar {
+    background-color: #FFD4A0 !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .a{
+    text-decoration: none;
+    color: inherit;
+  }
+        .card {
+            margin: 0 10px;
+        }
+  .text-green {
+    color: #19AB14;
+  }
+  
+  .text-black {
+    color: #000000;
+  }
+  
+  .custom-font {
+    font-family: 'Style Script', cursive;
+  }
+        .text-green {
+            color: #19AB14;
+            font-family: 'Style Script', cursive;
+            
+        }
+
+        .text-black {
+            color: #000000;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .card-text {
+    background-color: #F68712;
+    
+}
+.card-title{
+    background-color: #F68712;
+}
+.card-body{
+    background-color: #F68712;
+    
+}
+.card {
+        border-radius: 20px;
+        overflow: hidden; 
+        background-color: #ffffff00;
+        border: #000000;
+        
+    }
+    .btn{
+        background-color: #19AB14;
+        
+    }
+    .d-flex{
+        padding-bottom: 15px;
+        justify-content: center;
+    }
+
+    @media (max-width:600px){
+        .img-logo{
+            display: none;
+        }
+    }
+.item-titulo {
+    color: #19AB14;
+}
+       
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Essa parte da Header foi feita por: Fernanda. -->
+        <!-- navbar com a logo do site -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <img src="img/logoPrincipal.png" class="img-logo">
+                <div class="text-green">        
+                    <!-- título-->
+                    <div class="text-center">
+                      <h4 class="custom-font mb-0">SABORES FIT</h1>
+                      <p class="text-black">HEALTHY RECIPES</p>                   
+                    </div>
+                  </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse offset-2" id="navbarText">
+                <ul class="navbar-nav mx-auto ">
+                    <!-- navbar com link para outras páginas do site -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="indexLogin.html">Login</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Receitas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Postar</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="navbar navbar-light bg-light offset-1">
+                <div class="container">
+                    <!-- botão de pesquisa -->
+                  <form class="form-flex d-flex align-items-center " action="#" method="#">
+                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn  my-2 my-sm-0 ms-2" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: aliceblue;">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg>
+                    </button>
+                  </form>
+                </div>
+              </nav>    
+          </nav>  
+    </header>
+    <main>
+        <!-- Essa parte da Main foi feita por: Cleiciane. -->
+        <main>
+            <div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <!-- imagem da capa da receita -->
+                        <div class="card" >
+                            <img class="card-img-top" src="img/brownie.jpg" alt="Imagem de capa do card">
+                            <!-- informações da receita -->
+                            <div class="card-body">
+                                <h5 class="card-title">Brownie</h5>
+                                <p class="card-text">
+                                    <strong>Tempo de Preparo:</strong> 30 minutos<br>
+                                    <strong>Porções:</strong> 4 porções
+                                </p>
+                                <div style="display: flex;">
+                                    <Strong>Avaliação:</Strong>
+                                <div id="duplicate-stars"></div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- lista de Ingredientes -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <h1 class="item-titulo">Brownie Fit</h1>
+                            <p>Lista de Ingredientes:</p>
+                            <ul>
+                                <li>1 xícara (chá) de cacau em pó 70%</li>
+                                <li>4 ovos</li>
+                                <li>4 colheres cheias de manteiga com sal</li>
+                                <li>1 xícara (chá) de farinha de amêndoas ou arroz</li>
+                                <li>1 xícara (chá) de açúcar demerara</li>
+                                <li>1 colher (café) de sal</li>
+                            </ul>
+                        </div>
+                        <!-- Modo de Preparo -->
+                        <div>
+                            <strong style="margin-left: 30px;" class="item-titulo">Modo de Preparo:</strong>
+                            <ol>
+                                <li>Bata o açúcar demerara no liquidificador usando o modo pulsar. Isso deixará o açúcar mais fino, reserve.</li>
+                                <li>Derreta a manteiga em uma panela ou no micro-ondas sem deixar ferver.</li>
+                                <li>Transfira para um recipiente grande e adicione o açúcar, o cacau em pó, a farinha e os ovos previamente batidos (à mão). Cada tipo de farinha trará um sabor diferente ao seu brownie.</li>
+                                <li>Misture tudo até ficar homogêneo.</li>
+                                <li>Transfira para uma forma de 30x20 untada com manteiga e enfarinhada com cacau.</li>
+                                <li>Asse em forno pré-aquecido a 180°C por cerca de 30 minutos, verificando o tempo, pois pode variar de forno para forno.</li>
+                            </ol>
+                            <strong style="margin-left: 30px;" class="item-titulo">Observações:</strong>
+                            <ul>
+                                <li>Experimente usar farinha de aveia peneirada, de arroz ou amêndoas para variar a textura do seu brownie.</li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </main>
+    <footer>
+        <!-- Essa parte do javascript foi feita por: Felipe e Ana. -->
+    <form onsubmit="return submitForm()">
+        AVALIE A RECEITA:
+        <section>
+            <!-- Estrelas de avaliação -->
+            <div class="d-flex">
+                <input type="hidden" name="rating" id="rating_input" value="0">
+                <a href="javascript:void(0)" onclick="Avaliar(1)">
+                    <img src="img/star0.png" id="s1" class="star-img">
+                </a>
+
+                <a href="javascript:void(0)" onclick="Avaliar(2)">
+                    <img src="img/star0.png" id="s2" class="star-img">
+                </a>
+
+                <a href="javascript:void(0)" onclick="Avaliar(3)">
+                    <img src="img/star0.png" id="s3" class="star-img">
+                </a>
+
+                <a href="javascript:void(0)" onclick="Avaliar(4)">
+                    <img src="img/star0.png" id="s4" class="star-img">
+                </a>
+
+                <a href="javascript:void(0)" onclick="Avaliar(5)">
+                    <img src="img/star0.png" id="s5" class="star-img">
+                </a>
+            </div>
+        </section>
+        <input class="btn btn-primary offset-2" type="submit" value="Submit">
+    </form>
+</footer>
+<script>
+    // Funções para as estrelas funcionarem
+    function Avaliar(estrela) {
+        var s1 = document.getElementById("s1");
+        var s2 = document.getElementById("s2");
+        var s3 = document.getElementById("s3");
+        var s4 = document.getElementById("s4");
+        var s5 = document.getElementById("s5");
+        var avaliacao = 0;
+
+        if (estrela <= 5) {
+            s1.src = "img/star0.png";
+            s2.src = "img/star0.png";
+            s3.src = "img/star0.png";
+            s4.src = "img/star0.png";
+            s5.src = "img/star0.png";
+
+            for (var i = 1; i <= estrela; i++) {
+                var starId = "s" + i;
+                document.getElementById(starId).src = "img/star1.png";
+            }
+
+            avaliacao = estrela;
+        }
+
+        document.getElementById('rating_input').value = avaliacao;
+    }
+    function submitForm() {
+        var duplicateStarsDiv = document.getElementById('duplicate-stars');
+        var ratingValue = document.getElementById('rating_input').value;
+
+        var starHTML = '';
+        for (var i = 1; i <= ratingValue; i++) {
+            starHTML += '<img src="img/star1.png" class="star-img">';
+        }
+
+        duplicateStarsDiv.innerHTML = starHTML;
+        return false;
+    }
+</script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>
