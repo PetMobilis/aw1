@@ -8,7 +8,7 @@ form.addEventListener('submit', function (event) {
         event.stopPropagation();
     }
 
-    form.classList.add('was-validated');
+    form.classList.add('foi-validado');
 })
 
 const senhaInput = document.querySelector("#password");
@@ -21,11 +21,11 @@ senhaInput.addEventListener("keyup", () => {
     const isValid = senha.length >= 8 && senha.length <= 20 && /[0-9]/.test(senha) && /[a-z]/.test(senha) && /[A-Z]/.test(senha);
     
     if (isValid) {
-        senhaInput.classList.remove("is-invalid");
-        senhaInput.classList.add("is-valid");
+        senhaInput.classList.remove("invalido");
+        senhaInput.classList.add("valido");
     } else {
-        senhaInput.classList.remove("is-valid");
-        senhaInput.classList.add("is-invalid");
+        senhaInput.classList.remove("valido");
+        senhaInput.classList.add("invalido");
     }
 })
 
@@ -33,11 +33,11 @@ confirmaSenha.addEventListener("keyup", () => {
     console.log("ConfirmaSenha keyup event triggered");
     
     if (confirmaSenha.value == senhaInput.value) {
-        confirmaSenha.classList.remove("is-invalid");
-        confirmaSenha.classList.add("is-valid");
+        confirmaSenha.classList.remove("invalid");
+        confirmaSenha.classList.add("valido");
     } else {
-        confirmaSenha.classList.remove("is-valid");
-        confirmaSenha.classList.add("is-invalid");
+        confirmaSenha.classList.remove("valido");
+        confirmaSenha.classList.add("invalido");
     }
 })
 
@@ -47,7 +47,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     
     if (form.checkValidity()) {
-        console.log("Form is valid. Submitting...");
+        console.log(" O formulário é válido. Enviando..");
         
         let dados = {
             nome: document.querySelector("#firstname").value,
@@ -66,9 +66,8 @@ form.addEventListener("submit", (e) => {
             }
         })
         .then(resposta => resposta.json())
-        .then(resultado => window.location.href = "lista.html")
-        .catch(error => console.error("Error during fetch:", error));
+        .catch(error => console.error("Erro durante a busca:", error));
     } else {
-        console.log("Form is not valid. Not submitting...");
+        console.log("O formulário não é válido. Não submetendo...");
     }
 })

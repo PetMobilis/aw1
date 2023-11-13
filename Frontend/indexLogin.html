@@ -6,247 +6,267 @@
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 </head>
-   <!-- Essa parte de cadastro todos os integrantes ajudaram a fazer. -->
 <style>
-    .body{
-    font-family: 'Comfortaa', cursive;
-    background-attachment: fixed;
-    background-color: #F68712;
- }
+    .body {
+        font-family: 'Comfortaa', cursive;
+        background-attachment: fixed;
+        background-color: #F68712;
+    }
 
- * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-   font-family: 'Inter', sans-serif;
-}
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
 
-body {
-   width: 100%;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background: #EAAD62;
-   border-radius: 100px;
-}
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #EAAD62;
+        border-radius: 100px;
+    }
 
-.container {
-   width: 80%;
-   height: 80vh;
-   display: flex;
-   background-color: #ffff;
-   border-radius: 6%;
-}
+    .container {
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        background-color: #ffff;
+        border-radius: 50px;
+       
+    }
 
-.form-image {
-   width: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #ffffff;
-   padding: 1rem;
-}
+    .form-image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 50px;
+       
+    }
 
-.form-image img {
-   width: 12rem;
-}
+    .form-image img {
+        width: 12rem;
+    }
 
-.form {
-   width: 50%;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background-color: #EAAD62;
-   padding: 3rem;
-   border-radius: 6%;
-}
+    .form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #EAAD62;
+        padding: 3rem;
+        border-radius: 6%;
+    }
 
-.form-header {
-   margin-bottom: 3rem;
-   display: flex;
-   justify-content: space-between;
-}
-
-.cadastro-button {
-   display: flex;
-   align-items: center;
-}
-
-.cadastro-button button {
-   border: none;
-   background-color: #19AB14;
-   padding: 0.4rem 1rem;
-   border-radius: 5px;
-   cursor: pointer;
-}
-
-.cadastro-button button:hover {
-   background-color: #19AB14;
-}
-
-.cadastro-button button a {
-   text-decoration: none;
-   font-weight: 500;
-   color: #fff;
+    .form-header {
+    margin-bottom: 4rem;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .form-header h1::after {
-   content: '';
-   display: block;
-   width: 5rem;
-   height: 0.3rem;
-   background-color: #19AB14;
-   margin: 0 auto;
-   position: absolute;
-   border-radius: 10px;
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #19AB14;
+    margin-top: 1rem;
+    border-radius: 10px;
 }
+    .cadastro-button {
+        display: flex;
+        align-items: center;
+    }
 
-.input-group {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   padding: 1rem 0;
-}
+    .cadastro-button button {
+        border: none;
+        background-color: #19AB14;
+        padding: 0.4rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-.input-box {
-   display: flex;
-   flex-direction: column;
-   margin-bottom: 2rem;
-}
+    .cadastro-button button:hover {
+        background-color: #19AB14;
+    }
 
-.input-box input {
-   margin: 0.6rem 0;
-   padding: 0.8rem 1.2rem;
-   border: none;
-   border-radius: 10px;
-   box-shadow: 1px 1px 6px #0000001c;
-   font-size: 0.8rem;
-}
+    .cadastro-button button a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #fff;
+    }
 
-.input-box input:hover {
-   background-color: #eeeeee75;
-}
+    .form-header h1::after {
+        content: '';
+        display: block;
+        width: 5rem;
+        height: 0.3rem;
+        background-color: #19AB14;
+        margin: 0 auto;
+        position: absolute;
+        border-radius: 10px;
+    }
 
-.input-box input:focus-visible {
-   outline: 1px solid #19AB14;
-}
+    
 
-.input-box label,
-.gender-title h6 {
-   font-size: 0.75rem;
-   font-weight: 600;
-   color: #000000c0;
-}
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
 
-.input-box input::placeholder {
-   color: #000000be;
-}
+    .input-box input {
+        margin: 0.6rem 0;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 6px #0000001c;
+        font-size: 0.8rem;
+    }
 
-.gender-group {
-   display: flex;
-   justify-content: space-between;
-   margin-top: 0.62rem;
-   padding: 0 .5rem;
-}
+    .input-box input:hover {
+        background-color: #eeeeee75;
+    }
 
+    .input-box input:focus-visible {
+        outline: 1px solid #19AB14;
+    }
 
-.continue-button button {
-   width: 100%;
-   margin-top: 2.5rem;
-   border: none;
-   background-color: #19AB14;
-   padding: 0.62rem;
-   border-radius: 5px;
-   cursor: pointer;
-}
+    .input-box label,
+    .gender-title h6 {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #000000c0;
+    }
 
-.continue-button button:hover {
-   background-color: #19AB14;
-}
+    .input-box input::placeholder {
+        color: #000000be;
+    }
 
-.continue-button button a {
-   text-decoration: none;
-   font-size: 0.93rem;
-   font-weight: 500;
-   color: #fff;
-}
+    .gender-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.62rem;
+        padding: 0 .5rem;
+    }
 
-@media screen and (max-width: 1330px) {
-   .form-image {
-       display: none;
-   }
-   .container {
-       width: 50%;
-   }
-   .form {
-       width: 100%;
-   }
-}
+    .continue-button button {
+        width: 100%;
+        margin-top: 2.5rem;
+        border: none;
+        background-color: #19AB14;
+        padding: 0.62rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-@media screen and (max-width: 1064px) {
-   .container {
-       width: 90%;
-       height: auto;
-   }
-   .input-group {
-       flex-direction: column;
-       z-index: 5;
-       padding-right: 5rem;
-       max-height: 10rem;
-       overflow-y: scroll;
-       flex-wrap: nowrap;
-   }
-   .gender-inputs {
-       margin-top: 2rem;
-   }
-   .gender-group {
-       flex-direction: column;
-   }
-   .gender-title h6 {
-       margin: 0;
-   }
-   .gender-input {
-       margin-top: 0.5rem;
-   }
-}
+    .continue-button button:hover {
+        background-color: #19AB14;
+    }
+
+    .continue-button button a {
+        text-decoration: none;
+        font-size: 0.93rem;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 1330px) {
+        .form-image {
+            display: none;
+            
+        }
+
+        .container {
+            width: 50%;
+           
+        }
+
+        .form {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1064px) {
+        .container {
+            width: 90%;
+            height: auto;
+         
+        }
+
+        .input-group {
+            flex-direction: column;
+            z-index: 5;
+            padding-right: 5rem;
+            max-height: 10rem;
+            overflow-y: scroll;
+            flex-wrap: nowrap;
+        }
+
+        .gender-inputs {
+            margin-top: 2rem;
+        }
+
+        .gender-group {
+            flex-direction: column;
+        }
+
+        .gender-title h6 {
+            margin: 0;
+        }
+
+        .gender-input {
+            margin-top: 0.5rem;
+        }
+    }
 </style>
 <body class="body">
     <div class="container">
         <div class="form-image">
             <img src="img/LOGO.png" alt="">
         </div>
+        
         <div class="form">
-            <form action="#">
-
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Login</h1>
-                    </div>
-                    <div class="cadastro-button">
-                        <button><a href="indexCadastro.html">Cadastre-se</a></button>
-                    </div>
-                </div>
+            <form id="loginForm">
+               <div class="form-header">
+                  <div class="cadastro-button">
+                     <button><a href="indexCadastro.html">Cadastre-se</a></button>
+                 </div>
+                  <div class="title mb-3">
+                      <h1>Login</h1>
+                  </div>
+                 
+              </div>
+              
 
                 <div class="input-group">
-                    <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
-                    </div>
-                </div>
+                  <div class="input-box mb-3 d-block">
+                      <label for="email">E-mail</label>
+                      <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                  </div>
+                  <div class="input-box mb-3 d-block">
+                      <label for="password">Senha</label>
+                      <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                  </div>
+              </div>
 
                 <div class="continue-button">
-                    <button><a href="pag.html">Continuar</a> </button>
+                    <button type="button" onclick="login()">Continuar</button>
                 </div>
             </form>
         </div>
     </div>
+    <script src="scriptLogin.js"></script>
 </body>
 </html>
