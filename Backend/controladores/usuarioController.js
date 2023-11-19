@@ -11,7 +11,7 @@ export const getUsuarios = (req, res) => {
 }
 
 export const postUsuarios = (req, res) => {
-    const q = "INSERT INTO tb_usuarios(`nome`, `sobrenome`, `email`, `celular`, `se`) VALUES(?)";
+    const q = "INSERT INTO tb_usuarios(`nome`, `sobrenome`, `email`, `celular`, `senha`) VALUES(?)";
 
     const values = [
         1,
@@ -19,6 +19,7 @@ export const postUsuarios = (req, res) => {
         req.body.sobrenome,
         req.body.email,
         req.body.celular,
+        req.body.senha,
     ]
 
     console.log(req.body)
