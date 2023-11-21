@@ -1,3 +1,5 @@
+// Feito por: Fernanda
+
 import express from "express";
 import cors from "cors";
 import rotasUsuario from "./rotasUsuario.js";
@@ -11,4 +13,5 @@ app.use("/usuario", rotasUsuario)
 
 
 app.listen(8080)
+
 

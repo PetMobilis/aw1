@@ -1,3 +1,5 @@
+// Feito por: Felipe e Fernanda
+
 import { db } from "../db.js";
 
 export const getUsuarios = (req, res) => {

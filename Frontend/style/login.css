@@ -1,4 +1,4 @@
-/* feito por Fernanda */
+/* Feito por: Fernanda */
 .body{
     font-family: 'Comfortaa', cursive;
     background-attachment: fixed;
@@ -164,6 +164,8 @@ body {
    font-weight: 500;
    color: #fff;
 }
+
+/* Responsividade */
 
 @media screen and (max-width: 1330px) {
    .form-image {

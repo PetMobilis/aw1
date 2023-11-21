@@ -61,9 +61,6 @@ ALTER TABLE `tb_usuarios`
 --
 
 --
--- AUTO_INCREMENT de tabela `tb_turmas`
-
---
 -- AUTO_INCREMENT de tabela `tb_usuarios`
 --
 ALTER TABLE `tb_usuarios`
