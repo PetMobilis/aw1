@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet" rel="stylesheet">
-    <link rel="stylesheet" href="/Frontend/style/pag.css">
+    <link rel="stylesheet" href="../style/pag.css">
 
 </head>
 <body>
@@ -19,7 +19,7 @@
         <!-- navbar com a logo do site -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <img src="/Frontend/img/logoPrincipal.png" class="img-logo">
+                <img src="../img/logoPrincipal.png" class="img-logo">
                 <div class="text-green">        
                     <!-- título-->
                     <div class="text-center">
@@ -34,7 +34,7 @@
                 <ul class="navbar-nav mx-auto ">
                     <!-- navbar com link para outras páginas do site -->
                   <li class="nav-item">
-                    <a class="nav-link" href="/Frontend/html/indexLogin.html">Login</span></a>
+                    <a class="nav-link" href="../html/indexLogin.html">Login</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Receitas</a>
@@ -68,7 +68,7 @@
                     <div class="col-md-4">
                         <!-- imagem da capa da receita -->
                         <div class="card" >
-                            <img class="card-img-top" src="/Frontend/img/brownie.jpg" alt="Imagem de capa do card">
+                            <img class="card-img-top" src="../img/brownie.jpg" alt="Imagem de capa do card">
                             <!-- informações da receita -->
                             <div class="card-body">
                                 <h5 class="card-title">Brownie</h5>
@@ -128,69 +128,30 @@
             <div class="d-flex">
                 <input type="hidden" name="rating" id="rating_input" value="0">
                 <a href="javascript:void(0)" onclick="Avaliar(1)">
-                    <img src="/Frontend/img/star0.png" id="s1" class="star-img">
+                    <img src="../img/star0.png" id="s1" class="star-img">
                 </a>
 
                 <a href="javascript:void(0)" onclick="Avaliar(2)">
-                    <img src="/Frontend/img/star0.png" id="s2" class="star-img">
+                    <img src="../img/star0.png" id="s2" class="star-img">
                 </a>
 
                 <a href="javascript:void(0)" onclick="Avaliar(3)">
-                    <img src="/Frontend/img/star0.png" id="s3" class="star-img">
+                    <img src="../img/star0.png" id="s3" class="star-img">
                 </a>
 
                 <a href="javascript:void(0)" onclick="Avaliar(4)">
-                    <img src="/Frontend/img/star0.png" id="s4" class="star-img">
+                    <img src="../img/star0.png" id="s4" class="star-img">
                 </a>
 
                 <a href="javascript:void(0)" onclick="Avaliar(5)">
-                    <img src="/Frontend/img/star0.png" id="s5" class="star-img">
+                    <img src="../img/star0.png" id="s5" class="star-img">
                 </a>
             </div>
         </section>
         <input class="btn btn-primary offset-2" type="submit" value="Avaliar">
     </form>
 </footer>
-<script>
-    // Funções para as estrelas funcionarem
-    function Avaliar(estrela) {
-        var s1 = document.getElementById("s1");
-        var s2 = document.getElementById("s2");
-        var s3 = document.getElementById("s3");
-        var s4 = document.getElementById("s4");
-        var s5 = document.getElementById("s5");
-        var avaliacao = 0;
-
-        if (estrela <= 5) {
-            s1.src = "/Frontend/img/star0.png";
-            s2.src = "/Frontend/img/star0.png";
-            s3.src = "/Frontend/img/star0.png";
-            s4.src = "/Frontend/img/star0.png";
-            s5.src = "/Frontend/img/star0.png";
-
-            for (var i = 1; i <= estrela; i++) {
-                var starId = "s" + i;
-                document.getElementById(starId).src = "/Frontend/img/star1.png";
-            }
-
-            avaliacao = estrela;
-        }
-
-        document.getElementById('rating_input').value = avaliacao;
-    }
-    function submitForm() {
-        var duplicateStarsDiv = document.getElementById('duplicate-stars');
-        var ratingValue = document.getElementById('rating_input').value;
-
-        var starHTML = '';
-        for (var i = 1; i <= ratingValue; i++) {
-            starHTML += '<img src="/Frontend/img/star1.png" class="star-img">';
-        }
-
-        duplicateStarsDiv.innerHTML = starHTML;
-        return false;
-    }
-</script>
+<script src="../script/scriptPag.js"></script>
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
