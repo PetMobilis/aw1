@@ -1,80 +1,116 @@
- <!-- Essa parte  foi feita por: Camila. -->
-
+<!-- Tela feito por: Camila-->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Exemplo de Receitas Saudáveis</title>
-  <link rel="stylesheet" href="../style/inicio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Principal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="..\style\inicio.css" rel="stylesheet">
+    <style>
+
+</style>
 </head>
+
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">🔎 Bem vindo</a>
-    <!-- Botão de colapso da barra de navegação -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <!-- Links da barra de navegação -->
-        <li class="nav-item">
-          <a class="nav-link" href="#">Início</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Receitas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contato</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<main>
-  <div class="container">
-    <h1>Bem vindo</h1>
-    <p>Aqui você pode buscar e compartilhar informações sobre experiências de receitas saudáveis</p>
-  </div>
-
-  <div class="container">
-    <div class="card-deck">
-      <div class="card">
-        <img src="../img/brownie.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Título do card 1</h5>
-          <p class="card-text">Um exemplo de texto rápido para construir o título do card e preencher o conteúdo do card.</p>
-          <a href="#" class="btn btn-primary">Visitar</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="../img/logoPrincipal.png" class="img-logo">
+            <div class="text-green">        
+                <!-- título-->
+                <div class="text-center">
+                  <h4 class="custom-font mb-0">SABORES FIT</h1>
+                  <p class="text-black">HEALTHY RECIPES</p>                   
+                </div>
+              </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse offset-2" id="navbarText">
+            <ul class="navbar-nav mx-auto ">
+                <!-- navbar com link para outras páginas do site -->
+              <li class="nav-item">
+                <a class="nav-link" href="../html/indexLogin.html">Login</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Receitas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Postar</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img src="../img/brownie.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Título do card 2</h5>
-          <p class="card-text">Um exemplo de texto rápido para construir o título do card e preencher o conteúdo do card.</p>
-          <a href="#" class="btn btn-primary">Visitar</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="../img/brownie.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Título do card 3</h5>
-          <p class="card-text">Um exemplo de texto rápido para construir o título do card e preencher o conteúdo do card.</p>
-          <a href="#" class="btn btn-primary">Visitar</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
+        <nav class="navbar navbar-light bg-light offset-1">
+            <div class="container">
+                <!-- botão de pesquisa -->
+              <form class="form-flex d-flex align-items-center " action="#" method="#">
+                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn  my-2 my-sm-0 ms-2" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="color: aliceblue;">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                </button>
+              </form>
+            </div>
+          </nav>    
+      </nav> 
+       
 
-<!-- JavaScript Bootstrap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            
+        <div>
+          <div class="text-center text-green mx-auto">
+                
+
+            
+
+    
+            <h1 class="text-center mt-5">Bem vindo</h1>
+            <h3 class="text-center">Aqui você pode buscar e compartilhar informações sobre experiências de receitas saudáveis</h3>
+          </div>
+          </div>
+    </header>
+    <main>
+        <br>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../img/brownie.jpg" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Brownie de chocolate</h5>
+              <p class="card-text">Um delicioso brownie de chocolate Fit</p>
+              <a href="../html/pag.html" class="btn btn-primary">Visitar</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1466673520/pt/foto/no-baked-blueberry-layered-cheesecake.jpg?s=2048x2048&w=is&k=20&c=BtAzP9aVRmHrODaQnKSX5KNNb-UuZBtih4xd5A9WAIw=" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Título do card 2</h5>
+              <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+              <a href="#" class="btn btn-primary">Visitar</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.istockphoto.com/id/1466673520/pt/foto/no-baked-blueberry-layered-cheesecake.jpg?s=2048x2048&w=is&k=20&c=BtAzP9aVRmHrODaQnKSX5KNNb-UuZBtih4xd5A9WAIw=" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h5 class="card-title">Título do card 3</h5>
+              <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+              <a href="#" class="btn btn-primary">Visitar</a>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
